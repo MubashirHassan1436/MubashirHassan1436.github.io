@@ -129,15 +129,15 @@ img {
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 1.1fr) minmax(300px, 0.72fr);
-  align-items: end;
-  gap: clamp(28px, 5vw, 70px);
+  grid-template-columns: minmax(0, 0.96fr) minmax(320px, 0.74fr);
+  align-items: center;
+  gap: clamp(30px, 6vw, 82px);
   min-height: calc(100vh - 82px);
-  padding: clamp(48px, 8vw, 96px) 0 34px;
+  padding: clamp(42px, 6vw, 78px) 0 clamp(30px, 5vw, 58px);
 }
 
 .hero-copy {
-  padding-bottom: clamp(10px, 5vw, 64px);
+  padding-bottom: 0;
 }
 
 .eyebrow {
@@ -164,8 +164,9 @@ h2 {
 }
 
 h1 {
-  max-width: 760px;
-  font-size: clamp(3rem, 8vw, 6.9rem);
+  max-width: 690px;
+  font-size: clamp(2.9rem, 5.65vw, 5.55rem);
+  line-height: 1.04;
 }
 
 h2 {
@@ -180,10 +181,10 @@ h3 {
 }
 
 .hero-summary {
-  max-width: 670px;
-  margin: 24px 0 0;
+  max-width: 620px;
+  margin: 22px 0 0;
   color: var(--muted);
-  font-size: clamp(1rem, 2vw, 1.2rem);
+  font-size: clamp(1rem, 1.45vw, 1.16rem);
 }
 
 .hero-actions,
@@ -232,7 +233,8 @@ h3 {
 
 .hero-portrait {
   position: relative;
-  min-height: min(560px, 74vh);
+  align-self: center;
+  min-height: clamp(410px, 54vw, 560px);
   border-radius: var(--radius);
   background:
     linear-gradient(180deg, rgba(15, 118, 110, 0.16), rgba(184, 134, 11, 0.12)),
@@ -251,8 +253,8 @@ h3 {
 .hero-portrait img {
   position: absolute;
   right: 50%;
-  bottom: -4px;
-  width: min(108%, 560px);
+  bottom: 0;
+  width: min(96%, 500px);
   max-width: none;
   transform: translateX(50%);
   filter: drop-shadow(0 22px 22px rgba(17, 24, 39, 0.22));
